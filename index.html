@@ -1,0 +1,406 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/d57f7428ad.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <style> 
+      .avatar {
+        width: 300px;
+        height: 300px;
+      }
+      .introduction span {
+        display: block;
+      }
+      .css-bg-color {
+        background: rgb(2, 0, 36);
+        background: linear-gradient(
+          90deg,
+          rgba(2, 0, 36, 1) 0%,
+          rgba(9, 9, 121, 1) 35%,
+          rgba(0, 212, 255, 1) 100%
+        );
+        height: 600px;
+      }
+      .css-bg-color-2 {
+        background: rgb(179,121,139);
+        background: linear-gradient(90deg, rgba(179,121,139,1) 0%, rgba(221,23,97,1) 35%, rgba(185,8,128,1) 100%);
+
+        height: 600px;
+
+      }
+      .css-bg-color-3 {
+        background: rgb(46, 67, 73);
+        background: linear-gradient(
+          90deg,
+          rgba(46, 67, 73, 1) 0%,
+          rgba(82, 151, 194, 1) 35%,
+          rgba(86, 218, 221, 1) 100%
+        );
+        height: 600px;
+      }
+      .css-bg-color-4 {
+        background: rgb(2, 0, 36);
+        background: linear-gradient(
+          43deg,
+          rgba(2, 0, 36, 1) 0%,
+          rgba(121, 9, 58, 1) 35%,
+          rgba(179, 0, 255, 1) 100%
+        );
+        height: 600px;
+      }
+      .bg-design {
+        background-image: url("images/wave4.svg");
+        background-repeat: no-repeat;
+      }
+
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+      .intro-body {
+        background-color: rgba(4, 0, 215, 1);
+      }
+      .title-color {
+        color: #0099ff;
+      }
+      .title-weight {
+        font-weight: 600;
+      }
+      .proj-img-1 {
+        width: auto;
+        max-width: 500px;
+        height: 400px;
+      }
+      .set-width{
+        width: 80%;
+        height: 100%;
+      }
+      .nav-link{
+        color: white;
+      }
+      a { color: inherit;
+      text-decoration: none; } 
+      ul.square {
+        list-style-type: none;
+      }
+      ul.square li {
+        padding-left: 1em; 
+        text-indent: -.9em;
+      }
+      ul.square li::before{
+        content: "■ ";
+        color: lightgreen; 
+        font-family:"Arial Black"
+      }
+      
+      @media (min-width:480px) and (max-width: 900px){
+        .css-bg-color {
+        background: rgb(2, 0, 36);
+        background: linear-gradient(
+          90deg,
+          rgba(2, 0, 36, 1) 0%,
+          rgba(9, 9, 121, 1) 35%,
+          rgba(0, 212, 255, 1) 100%
+        );
+        height: 1000px;
+      }
+      .css-bg-color-2 {
+        background: rgb(179,121,139);
+        background: linear-gradient(90deg, rgba(179,121,139,1) 0%, rgba(221,23,97,1) 35%, rgba(185,8,128,1) 100%);
+        height: 1050px;
+
+      }
+      .css-bg-color-3 {
+        background: rgb(46, 67, 73);
+        background: linear-gradient(
+          90deg,
+          rgba(46, 67, 73, 1) 0%,
+          rgba(82, 151, 194, 1) 35%,
+          rgba(86, 218, 221, 1) 100%
+        );
+        height: 800px;
+      }
+      .css-bg-color-4 {
+        background: rgb(2, 0, 36);
+        background: linear-gradient(
+          43deg,
+          rgba(2, 0, 36, 1) 0%,
+          rgba(121, 9, 58, 1) 35%,
+          rgba(179, 0, 255, 1) 100%
+        );
+        height: 800px;
+      }
+      .nav-link {
+        color: black;
+      }
+      .flexDirection {
+        display: flex;
+        flex-direction: column;
+      }
+      .proj-img-1 {
+        max-width: 300px;
+      }
+    
+      }
+    
+    </style>
+  </head>
+  <body>
+    <div class="bg-design">
+      <nav class="navbar navbar-expand-lg mb-5">
+        <div class="container justify-content-center">
+          <div id="navbarSupportedContent">
+            <ul class="nav-items navbar-nav me-auto mb-2 mb-sm-0">
+              <li class="nav-item">
+                <a class="nav-link " href="#projects" aria-current="page" 
+                  >Projects</a
+                >
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" aria-current="page"
+                  >Resume</a
+                >
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" aria-current="page" target="_blank" rel="noopener noreferrer" href="https://github.com/ShivasCode"
+                  >Github</a
+                >
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" aria-current="page" href="#contact"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="container-sm">
+        <div class="d-flex align-items-center justify-content-center mb-5">
+          <div class="introduction shadow p-3 bg-white rounded">
+            <h3 class="text-center">
+              <strong
+                >Hi, I am Shiva,
+                <span class="title-color"
+                  >Full Stack Web Developer</span
+                ></strong
+              >
+            </h3>
+            <h5 class="text-center">I design the frontend and <span>backend of websites.</span></h4>
+          </div>
+          <div>
+            <img class="avatar img-fluid" src="images/avataaars.svg" alt="" />
+          </div>
+        </div>
+        <div class="text-justify mx-5 mt-5 mb-5">
+          <h7 class="">
+            I am a 2nd year Computer Engineering student in Technological
+            University of the Philippines - Manila. I am a self-learned
+            programmer specializing in web development. I am indulged with
+            programming and it became my passion and hobby.
+          </h7>
+        </div>
+        <div class="mt-5 mx-5">
+          <h3 class="text-center mb-5"><strong>Skills</strong></h3>
+
+          <div class="d-flex justify-content-evenly flexDirection">
+            <div>
+              <h5 class="title-weight">Languages</h5>
+              <ul>
+                <li>Python</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JAVASCRIPT</li>
+              </ul>
+            </div>
+            <div>
+              <h5 class="title-weight">Databases</h5>
+              <ul>
+                <li>PostgreSQL</li>
+              </ul>
+            </div>
+            <div>
+              <h5 class="title-weight">Frameworks and tools</h5>
+              <ul>
+                <li>Django</li>
+                <li>Django Rest Framework</li>
+                <li>Vue</li>
+                <li>Vuex</li>
+              </ul>
+            </div>
+            <div >
+              <h5 class="title-weight">Other</h5>
+              <ul>
+                <li>Heroku</li>
+                <li>Stripe</li>
+                <li>REST API</li>
+                <li>Unit testing</li>
+                <li>Git</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="">
+          <h3 class="text-center mb-3" id="projects"><strong>Projects</strong></h3>
+          <div class="css-bg-color shadow p-3 mb-5 bg-body rounded ">
+                <div class="set-width row mx-auto align-items-center">
+                  <div class="col">
+                    <img src="images/ecom.jpg" class='proj-img-1 shadow bg-body rounded img-fluid' alt="">
+                  </div>
+                  <div class="col">
+                    <h3 class="text-start text-light"><strong>Caps</strong></h3>
+                    <p class="text-light">An online store application, browse on certain products and purchase through stripe. The backend used is Django Rest Framework to make API calls from the frontend (Vue JS).</p>
+                    <p class="text-light"> This ecommerce website uses token authentication to make request and prove authorization to the server. It uses django models to query the database efficiently.
+                      The frontend is built with VueJS</p>
+                      <a class='link-light' href="https://github.com/ShivasCode/ecommerce_web.git">https://github.com/ShivasCode/ecommerce_web.git</a>
+                      <ul class="square row text-light">
+                        <div class="col">
+                          <li>HTML</li>
+                          <li>CSS</li>
+                          <li>VueJS</li>
+                        </div>
+                        <div class="col">
+                          <li>Django</li>
+                          <li>Django Rest Framework</li>
+                          <li>Stripe</li>
+                        </div>
+
+                      </ul>
+                  </div>
+                </div>
+        </div>
+          <div class="css-bg-color-2 shadow p-3 mb-5 bg-body rounded">
+            <div class="set-width row mx-auto align-items-center">
+              <div class="col">
+                <img src="images/crm.jpg" class='proj-img-1 shadow bg-body rounded img-fluid' alt="">
+              </div>
+              <div class="col">
+                <h3 class="text-start text-light"><strong>CRM</strong></h3>
+                <p class="text-light">a customer relational management system that is used to manage potential clients assigned by a team and record information about the potential client.</p>
+                <p class="text-light">This website uses a library in django called "djoser" for token authentication which assigns a token to a logged in user to make request from the server. I've learned a lot from this
+                  personal project such as: making connections with relational database with django model and serializers, filtering methods based on django model or given user, catching errors and creating 
+                  exception and validators. I've also used vuex to temporarily store data in the localStorage which makes it easier to make request in the backend.</p>
+                  <a class='link-light' href="https://github.com/ShivasCode/crm">https://github.com/ShivasCode/crm</a>
+                      <ul class="square row text-light">
+                        <div class="col">
+                          <li>HTML</li>
+                          <li>CSS</li>
+                          <li>VueJS</li>
+                          <li>Vuex</li>
+                          <li>Bootstrap</li>
+
+                        </div>
+                        <div class="col">
+                          <li>Django</li>
+                          <li>Django Rest Framework</li>
+                          <li>Stripe</li>
+                        </div>
+
+                      </ul>
+              </div>
+            </div>
+          </div>
+        <div class="">
+          <div class="css-bg-color-3 shadow p-3 mb-5 bg-body rounded">
+            <div class="set-width row mx-auto align-items-center">
+              <div class="col">
+                <img src="images/todo.jpg" class='proj-img-1 shadow bg-body rounded img-fluid' alt="">
+              </div>
+              <div class="col">
+                <h3 class="text-start text-light"><strong>Todo</strong></h3>
+                <p class="text-light">An application used for listing tasks you need to complete.</p>
+                <p class="text-light">This project taught me a lot such as: Building a CRUD application, using session authentication, django signals and a much more efficient way of creating forms.</p>
+                <a class='link-light' href="https://github.com/ShivasCode/Todo-list">https://github.com/ShivasCode/Todo-list</a>
+                      <ul class="square row text-light">
+                        <div class="col">
+                          <li>HTML</li>
+                          <li>CSS</li>
+                          <li>VueJS</li>
+                          <li>Bootstrap</li>
+
+                        </div>
+                        <div class="col">
+                          <li>Django</li>
+                          <li>Django Rest Framework</li>
+                        </div>
+
+                      </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="css-bg-color-4 shadow p-3 mb-5 bg-body rounded">
+            <div class="set-width row mx-auto align-items-center">
+              <div class="col">
+                <img src="images/forum.jpg" class='proj-img-1 shadow bg-body rounded img-fluid' alt="">
+              </div>
+              <div class="col">
+                <h3 class="text-start text-light"><strong>Forum</strong></h3>
+                <p class="text-light">
+                  A web application used to ask questions, share ideas, and insights about the tech stack. </p>
+                <p class="text-light">It contains CRUD functionalities and a user authentication. It also uses filtering methods to filter given results based on the category. </p>
+                <a class='link-light' href="https://github.com/ShivasCode/Forum-blog">https://github.com/ShivasCode/Forum-blog</a>
+                      <ul class="square row text-light mt-2">
+                        <div class="col">
+                          <li>HTML</li>
+                          <li>CSS</li>
+                          <li>VueJS</li>
+                          <li>Bootstrap</li>
+
+                        </div>
+                        <div class="col">
+                          <li>Django</li>
+                          <li>Django Rest Framework</li>
+                        </div>
+
+                      </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+      </div>
+    </div>
+
+
+  </body>
+  <footer>
+    <div class="container">
+        <div class="d-flex justify-content-between flexDirection">
+            <h3 id="contact">Contact</h3>
+            <h5>shivakumarsunderamurthy@gmail.com</h5>
+            <h5><a href="https://github.com/ShivasCode">Github: ShivasCode</a></h3>
+            <h5><a href="https://www.linkedin.com/in/shivakumar-sunderamurthy-976183240/">Linked in: Shivakumar Sunderamurthy</a></h3>
+
+        </div>
+    </div>
+  </footer>
+  <script src="main.js"></script>
+
+</html>
