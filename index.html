@@ -3,7 +3,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shiva | Software Dev</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -50,7 +50,7 @@
         background: rgb(179,121,139);
         background: linear-gradient(90deg, rgba(179,121,139,1) 0%, rgba(221,23,97,1) 35%, rgba(185,8,128,1) 100%);
 
-        height: 800px;
+        height: 600px;
 
       }
       .css-bg-color-3 {
@@ -131,7 +131,7 @@
       .css-bg-color-2 {
         background: rgb(179,121,139);
         background: linear-gradient(90deg, rgba(179,121,139,1) 0%, rgba(221,23,97,1) 35%, rgba(185,8,128,1) 100%);
-        height: 1150px;
+        height: 1050px;
 
       }
       .css-bg-color-3 {
@@ -152,7 +152,7 @@
           rgba(121, 9, 58, 1) 35%,
           rgba(179, 0, 255, 1) 100%
         );
-        height: 850px;
+        height: 800px;
       }
       .nav-link {
         color: black;
@@ -166,7 +166,61 @@
       }
     
       }
-    
+      @media (min-width:320px) and (max-width: 900px){
+      .bg-design {
+        background-image: url("images/wave4.svg");
+      }
+        .css-bg-color {
+        background: rgb(2, 0, 36);
+        background: linear-gradient(
+          90deg,
+          rgba(2, 0, 36, 1) 0%,
+          rgba(9, 9, 121, 1) 35%,
+          rgba(0, 212, 255, 1) 100%
+        );
+        height: 1200px;
+      }
+      .css-bg-color-2 {
+        background: rgb(179,121,139);
+        background: linear-gradient(90deg, rgba(179,121,139,1) 0%, rgba(221,23,97,1) 35%, rgba(185,8,128,1) 100%);
+        height: 1500px;
+
+      }
+      .css-bg-color-3 {
+        background: rgb(46, 67, 73);
+        background: linear-gradient(
+          90deg,
+          rgba(46, 67, 73, 1) 0%,
+          rgba(82, 151, 194, 1) 35%,
+          rgba(86, 218, 221, 1) 100%
+        );
+        height: 1000px;
+      }
+      .css-bg-color-4 {
+        background: rgb(2, 0, 36);
+        background: linear-gradient(
+          43deg,
+          rgba(2, 0, 36, 1) 0%,
+          rgba(121, 9, 58, 1) 35%,
+          rgba(179, 0, 255, 1) 100%
+        );
+        height: 1000px;
+      }
+      .nav-link {
+        color: black;
+      }
+      .flexDirection {
+        display: flex;
+        flex-direction: column;
+      }
+      .proj-img-1 {
+        max-width: 200px;
+      }
+      .link-tag{
+        word-wrap:break-word;
+
+      }
+      }
     </style>
   </head>
   <body>
@@ -267,7 +321,7 @@
 
         <div class="">
           <h3 class="text-center mb-3" id="projects"><strong>Projects</strong></h3>
-          <div class="css-bg-color shadow p-3 mb-5 bg-body rounded ">
+          <div class="css-bg-color shadow p-3 mb-5 bg-body rounded">
                 <div class="set-width row mx-auto align-items-center">
                   <div class="col">
                     <img src="images/ecom.jpg" class='proj-img-1 shadow bg-body rounded img-fluid' alt="">
@@ -277,7 +331,7 @@
                     <p class="text-light">An online store application, browse on certain products and purchase through stripe. The backend used is Django Rest Framework to make API calls from the frontend (Vue JS).</p>
                     <p class="text-light"> This ecommerce website uses token authentication to make request and prove authorization to the server. It uses django models to query the database efficiently.
                       The frontend is built with VueJS</p>
-                      <a class='link-light' href="https://github.com/ShivasCode/ecommerce_web.git">https://github.com/ShivasCode/ecommerce_web.git</a>
+                      <a class='link-tag link-light' href="https://github.com/ShivasCode/ecommerce_web.git">https://github.com/ShivasCode/ecommerce_web.git</a>
                       <ul class="square row text-light">
                         <div class="col">
                           <li>HTML</li>
@@ -297,7 +351,7 @@
           <div class="css-bg-color-2 shadow p-3 mb-5 bg-body rounded">
             <div class="set-width row mx-auto align-items-center">
               <div class="col">
-                <img src="images/customer.JPG" class='proj-img-1 shadow bg-body rounded img-fluid' alt="">
+                <img src="images/crm.jpg" class='proj-img-1 shadow bg-body rounded img-fluid' alt="">
               </div>
               <div class="col">
                 <h3 class="text-start text-light"><strong>CRM</strong></h3>
@@ -305,7 +359,7 @@
                 <p class="text-light">This website uses a library in django called "djoser" for token authentication which assigns a token to a logged in user to make request from the server. I've learned a lot from this
                   personal project such as: making connections with relational database with django model and serializers, filtering methods based on django model or given user, catching errors and creating 
                   exception and validators. I've also used vuex to temporarily store data in the localStorage which makes it easier to make request in the backend.</p>
-                  <a class='link-light' href="https://github.com/ShivasCode/crm">https://github.com/ShivasCode/crm</a>
+                  <a class='link-tag link-light' href="https://github.com/ShivasCode/crm">https://github.com/ShivasCode/crm</a>
                       <ul class="square row text-light">
                         <div class="col">
                           <li>HTML</li>
@@ -335,7 +389,7 @@
                 <h3 class="text-start text-light"><strong>Todo</strong></h3>
                 <p class="text-light">An application used for listing tasks you need to complete.</p>
                 <p class="text-light">This project taught me a lot such as: Building a CRUD application, using session authentication, django signals and a much more efficient way of creating forms.</p>
-                <a class='link-light' href="https://github.com/ShivasCode/Todo-list">https://github.com/ShivasCode/Todo-list</a>
+                <a class='link-tag link-light' href="https://github.com/ShivasCode/Todo-list">https://github.com/ShivasCode/Todo-list</a>
                       <ul class="square row text-light">
                         <div class="col">
                           <li>HTML</li>
@@ -365,7 +419,7 @@
                 <p class="text-light">
                   A web application used to ask questions, share ideas, and insights about the tech stack. </p>
                 <p class="text-light">It contains CRUD functionalities and a user authentication. It also uses filtering methods to filter given results based on the category. </p>
-                <a class='link-light' href="https://github.com/ShivasCode/Forum-blog">https://github.com/ShivasCode/Forum-blog</a>
+                <a class='link-tag link-light' href="https://github.com/ShivasCode/Forum-blog">https://github.com/ShivasCode/Forum-blog</a>
                       <ul class="square row text-light mt-2">
                         <div class="col">
                           <li>HTML</li>
