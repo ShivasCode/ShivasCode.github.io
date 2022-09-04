@@ -29,12 +29,16 @@
     ></script>
 
     <style>
+   
       .title-weight {
         font-weight: 600;
       }
       .add-width {
         width: 80%;
         
+      }
+      .add-width#second{
+        width: 60%;
       }
       .list {
         display: grid;
@@ -128,22 +132,14 @@
         font-family:"Arial Black"
       }
       ul.square#first li::before{
-        content: "■ ";
-        color: lightgreen; 
-        font-family:"Arial Black"
+        color: green; 
       }
       ul.square#second li::before{
-        content: "■ ";
-        color: lightblue; 
-        font-family:"Arial Black"
+        color: salmon; 
       }ul.square#third li::before{
-        content: "■ ";
-        color: lightsalmon; 
-        font-family:"Arial Black"
+        color: lime; 
       }ul.square#fourth li::before{
-        content: "■ ";
-        color: lightpink; 
-        font-family:"Arial Black"
+        color: pink; 
       }
       .text-color#first {
         color: lightgreen;
@@ -232,18 +228,17 @@
       }
       a { color: inherit;
       text-decoration: none; } 
-      ul.square { 
-        list-style-type: none;
-      }
-      ul.square li {
-        padding-left: 1em; 
-        text-indent: -.9em;
-      }
+      
     
     
     }
       
       @media (min-width:480px) and (max-width: 900px){
+        .list {
+        display: grid;
+        grid-column-gap: 1.5rem; 
+        grid-template-columns: repeat(2,1fr); 
+      }
         .add-width{
           width: 100%;
         }
@@ -414,10 +409,10 @@
         <div class="mt-5 mx-5">
           <h4 class="text-center mb-5"><strong>Skills</strong></h4>
 
-          <div class="d-flex flex-column flexDirection add-width mx-auto">
+          <div class="d-flex flex-column flexDirection add-width mx-auto" id="second">
             <div>
-              <h6 class="title-weight add-width mb-2">Languages</h6>
-              <ul class="square list mb-3" id="first">
+              <h6 class="title-weight mb-2 px-4">Languages</h6>
+              <ul class="square list mb-5 text-weight-1 text-start" id="first">
                 <li>Python</li>
                 <li>HTML</li>
                 <li>CSS</li>
@@ -425,22 +420,22 @@
               </ul>
             </div>
             <div>
-              <h6 class="title-weight mb-2">Databases</h6>
-              <ul class="square mb-3" id="second">
+              <h6 class="title-weight mb-2 px-4">Databases</h6>
+              <ul class="square mb-5" id="second">
                 <li>PostgreSQL</li>
               </ul>
             </div>
             <div>
-              <h6 class="title-weight mb-2">Frameworks and tools</h6>
-              <ul class="square list mb-3" id="third">
+              <h6 class="title-weight mb-2 px-4">Frameworks and tools</h6>
+              <ul class="square list mb-5" id="third">
                 <li>Django</li>
-                <li>Django Rest Framework</li>
+                <li>Django Rest</li>
                 <li>Vue</li>
                 <li>Vuex</li>
               </ul>
             </div>
             <div >
-              <h6 class="title-weight mb-2">Other</h6>
+              <h6 class="title-weight mb-2 px-4">Other</h6>
               <ul class="square list mb-5" id="fourth">
                 <li>Heroku</li>
                 <li>Stripe</li>
