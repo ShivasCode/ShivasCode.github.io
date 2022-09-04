@@ -36,6 +36,9 @@
         width: 80%;
         
       }
+      .add-width#second{
+        width: 60%;
+      }
       .list {
         display: grid;
         grid-column-gap: 1.5rem; 
@@ -129,20 +132,20 @@
       }
       ul.square#first li::before{
         content: "■ ";
-        color: lightgreen; 
+        color: green; 
         font-family:"Arial Black"
       }
       ul.square#second li::before{
         content: "■ ";
-        color: lightblue; 
+        color: salmon; 
         font-family:"Arial Black"
       }ul.square#third li::before{
         content: "■ ";
-        color: lightsalmon; 
+        color: lime; 
         font-family:"Arial Black"
       }ul.square#fourth li::before{
         content: "■ ";
-        color: lightpink; 
+        color: pink; 
         font-family:"Arial Black"
       }
       .text-color#first {
@@ -414,7 +417,7 @@
         <div class="mt-5 mx-5">
           <h4 class="text-center mb-5"><strong>Skills</strong></h4>
 
-          <div class="d-flex flex-column flexDirection add-width mx-auto">
+          <div class="d-flex flex-column flexDirection add-width mx-auto" id="second">
             <div>
               <h6 class="title-weight add-width mb-2">Languages</h6>
               <ul class="square list mb-3" id="first">
@@ -485,7 +488,7 @@
           <div class="css-bg-color-2 shadow p-3 mb-5 bg-body rounded">
             <div class="set-width row mx-auto align-items-center">
               <div class="col">
-                <img src="images/crm.jpg" class='proj-img-1 shadow bg-body rounded img-fluid' alt="">
+                <img src="images/customer.JPG" class='proj-img-1 shadow bg-body rounded img-fluid' alt="">
               </div>
               <div class="col">
                 <h3 class="text-start text-light"><strong>CRM</strong></h3>
