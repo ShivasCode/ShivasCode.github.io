@@ -3,7 +3,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shiva | Software Dev</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -28,7 +28,20 @@
       crossorigin="anonymous"
     ></script>
 
-    <style> 
+    <style>
+      .title-weight {
+        font-weight: 600;
+      }
+      .add-width {
+        width: 80%;
+        
+      }
+      .list {
+        display: grid;
+        grid-column-gap: 1.5rem; 
+        grid-template-columns: repeat(4,1fr); 
+      }
+      
       .avatar {
         width: 300px;
         height: 300px;
@@ -44,13 +57,13 @@
           rgba(9, 9, 121, 1) 35%,
           rgba(0, 212, 255, 1) 100%
         );
-        height: 600px;
+        min-height: 600px;
       }
       .css-bg-color-2 {
         background: rgb(179,121,139);
         background: linear-gradient(90deg, rgba(179,121,139,1) 0%, rgba(221,23,97,1) 35%, rgba(185,8,128,1) 100%);
 
-        height: 600px;
+        min-height: 600px;
 
       }
       .css-bg-color-3 {
@@ -61,7 +74,7 @@
           rgba(82, 151, 194, 1) 35%,
           rgba(86, 218, 221, 1) 100%
         );
-        height: 600px;
+        min-height: 600px;
       }
       .css-bg-color-4 {
         background: rgb(2, 0, 36);
@@ -71,7 +84,122 @@
           rgba(121, 9, 58, 1) 35%,
           rgba(179, 0, 255, 1) 100%
         );
-        height: 600px;
+        min-height: 600px;
+      }
+      .bg-design {
+        background-image: url("images/wave4.svg");
+        background-repeat: no-repeat;
+      }
+
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+      .intro-body {
+        background-color: rgba(4, 0, 215, 1);
+      }
+      .title-color {
+        color: #0099ff;
+      }
+      
+      .proj-img-1 {
+        width: auto;
+        max-width: 500px;
+        height: 400px;
+      }
+      .set-width{
+        width: 80%;
+        height: 100%;
+      }
+      .nav-link{
+        color: white;
+      }
+      a { color: inherit;
+      text-decoration: none; } 
+      ul.square {
+        list-style-type: none;
+      }
+      ul.square li {
+        padding-left: 1em; 
+        text-indent: -.9em;
+      }
+      ul.square li::before{
+        content: "■ ";
+        color: lightgreen; 
+        font-family:"Arial Black"
+      }
+      ul.square#first li::before{
+        content: "■ ";
+        color: lightgreen; 
+        font-family:"Arial Black"
+      }
+      ul.square#second li::before{
+        content: "■ ";
+        color: lightblue; 
+        font-family:"Arial Black"
+      }ul.square#third li::before{
+        content: "■ ";
+        color: lightsalmon; 
+        font-family:"Arial Black"
+      }ul.square#fourth li::before{
+        content: "■ ";
+        color: lightpink; 
+        font-family:"Arial Black"
+      }
+      .text-color#first {
+        color: lightgreen;
+      }
+      .text-color#second {
+        color: lightblue;
+      }
+      .text-color#third {
+        color: lightsalmon;
+      }
+      .text-color#last {
+        color: lightpink;
+      }
+      @media(min-width: 1025px) {.avatar {
+        width: 300px;
+        height: 300px;
+      }
+      .introduction span {
+        display: block;
+      }
+      .css-bg-color {
+        background: rgb(2, 0, 36);
+        background: linear-gradient(
+          90deg,
+          rgba(2, 0, 36, 1) 0%,
+          rgba(9, 9, 121, 1) 35%,
+          rgba(0, 212, 255, 1) 100%
+        );
+        min-height: 600px;
+      }
+      .css-bg-color-2 {
+        background: rgb(179,121,139);
+        background: linear-gradient(90deg, rgba(179,121,139,1) 0%, rgba(221,23,97,1) 35%, rgba(185,8,128,1) 100%);
+
+        min-height: 600px;
+
+      }
+      .css-bg-color-3 {
+        background: rgb(46, 67, 73);
+        background: linear-gradient(
+          90deg,
+          rgba(46, 67, 73, 1) 0%,
+          rgba(82, 151, 194, 1) 35%,
+          rgba(86, 218, 221, 1) 100%
+        );
+        min-height: 600px;
+      }
+      .css-bg-color-4 {
+        background: rgb(2, 0, 36);
+        background: linear-gradient(
+          43deg,
+          rgba(2, 0, 36, 1) 0%,
+          rgba(121, 9, 58, 1) 35%,
+          rgba(179, 0, 255, 1) 100%
+        );
+        min-height: 600px;
       }
       .bg-design {
         background-image: url("images/wave4.svg");
@@ -104,20 +232,21 @@
       }
       a { color: inherit;
       text-decoration: none; } 
-      ul.square {
+      ul.square { 
         list-style-type: none;
       }
       ul.square li {
         padding-left: 1em; 
         text-indent: -.9em;
       }
-      ul.square li::before{
-        content: "■ ";
-        color: lightgreen; 
-        font-family:"Arial Black"
-      }
+    
+    
+    }
       
       @media (min-width:480px) and (max-width: 900px){
+        .add-width{
+          width: 100%;
+        }
         .css-bg-color {
         background: rgb(2, 0, 36);
         background: linear-gradient(
@@ -166,7 +295,11 @@
       }
     
       }
-      @media (min-width:320px) and (max-width: 900px){
+      @media (min-width:320px) and (max-width: 479px){
+        .list {
+        display: grid;
+        grid-template-columns: repeat(1,auto); 
+      }
       .bg-design {
         background-image: url("images/wave4.svg");
       }
@@ -271,7 +404,7 @@
           </div>
         </div>
         <div class="text-justify mx-5 mt-5 mb-5">
-          <h7 class="">
+          <h7 class="add-width">
             I am a 2nd year Computer Engineering student in Technological
             University of the Philippines - Manila. I am a self-learned
             programmer specializing in web development. I am indulged with
@@ -279,27 +412,27 @@
           </h7>
         </div>
         <div class="mt-5 mx-5">
-          <h3 class="text-center mb-5"><strong>Skills</strong></h3>
+          <h4 class="text-center mb-5"><strong>Skills</strong></h4>
 
-          <div class="d-flex justify-content-evenly flexDirection">
+          <div class="d-flex flex-column flexDirection add-width mx-auto">
             <div>
-              <h5 class="title-weight">Languages</h5>
-              <ul>
+              <h6 class="title-weight add-width mb-2">Languages</h6>
+              <ul class="square list mb-3" id="first">
                 <li>Python</li>
                 <li>HTML</li>
                 <li>CSS</li>
-                <li>JAVASCRIPT</li>
+                <li>JavaScript</li>
               </ul>
             </div>
             <div>
-              <h5 class="title-weight">Databases</h5>
-              <ul>
+              <h6 class="title-weight mb-2">Databases</h6>
+              <ul class="square mb-3" id="second">
                 <li>PostgreSQL</li>
               </ul>
             </div>
             <div>
-              <h5 class="title-weight">Frameworks and tools</h5>
-              <ul>
+              <h6 class="title-weight mb-2">Frameworks and tools</h6>
+              <ul class="square list mb-3" id="third">
                 <li>Django</li>
                 <li>Django Rest Framework</li>
                 <li>Vue</li>
@@ -307,8 +440,8 @@
               </ul>
             </div>
             <div >
-              <h5 class="title-weight">Other</h5>
-              <ul>
+              <h6 class="title-weight mb-2">Other</h6>
+              <ul class="square list mb-5" id="fourth">
                 <li>Heroku</li>
                 <li>Stripe</li>
                 <li>REST API</li>
@@ -318,9 +451,10 @@
             </div>
           </div>
         </div>
-
+<br>
+<br>
         <div class="">
-          <h3 class="text-center mb-3" id="projects"><strong>Projects</strong></h3>
+          <h4 class="text-center mb-5 " id="projects"><strong>Projects</strong></h4>
           <div class="css-bg-color shadow p-3 mb-5 bg-body rounded">
                 <div class="set-width row mx-auto align-items-center">
                   <div class="col">
@@ -351,7 +485,7 @@
           <div class="css-bg-color-2 shadow p-3 mb-5 bg-body rounded">
             <div class="set-width row mx-auto align-items-center">
               <div class="col">
-                <img src="images/customer.JPG" class='proj-img-1 shadow bg-body rounded img-fluid' alt="">
+                <img src="images/crm.jpg" class='proj-img-1 shadow bg-body rounded img-fluid' alt="">
               </div>
               <div class="col">
                 <h3 class="text-start text-light"><strong>CRM</strong></h3>
